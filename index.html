@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="leftLogo">bakarrica</div>
+      <div class="midTitle">Bookshelf Apps</div>
+      <div class="rightSosmed">
+        <ul>
+          <li>
+            <a href="twitter.com" class="btnSosmed"><img src="assets/twitter.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="instagram.com" class="btnSosmed"><img src="assets/instagram.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="linkdin.com" class="btnSosmed"><img src="assets/linkedin.png" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="formBox">
+        <form action="" id="addBook" class="addBook">
+          <h3>Masukkan buku baru</h3>
+          <div class="inputBox">
+            <input type="text" id="inputTitle" required="required" />
+            <span>Judul</span>
+          </div>
+          <div class="inputBox">
+            <input type="text" id="inputAuthor" required="required" />
+            <span>Penulis</span>
+          </div>
+          <div class="inputBox">
+            <input type="number" id="inputYear" required="required" />
+            <span>Tahun</span>
+          </div>
+          <div class="checkBox">
+            Sudah dibaca
+            <input type="checkbox" id="inputCompleteBook" name="checkbox" />
+          </div>
+          <button type="submit" class="btn">Tambah</button>
+        </form>
+        <form action="" class="searchBook">
+          <h3>Cari buku</h3>
+          <div class="inputBox">
+            <input type="text" id="searchBookTitle" required="required" />
+            <span>Judul</span>
+            <button id="searchSubmit" type="submit" class="btn">cari</button>
+          </div>
+        </form>
+      </section>
+      <section class="viewBox">
+        <div class="booklist">
+          <h2>Belum selesai dibaca</h2>
+          <div class="mainlist" id="incompleteBookshelfList"></div>
+        </div>
+        <div class="booklist">
+          <h2>Selesai dibaca</h2>
+          <div class="mainlist" id="completeBookshelfList"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="authors">app by frankdri togas</div>
+      <div class="rightSosmed">
+        <ul>
+          <li>
+            <a href="twitter.com" class="btnSosmed"><img src="assets/twitter.png" alt="twitter" /></a>
+          </li>
+          <li>
+            <a href="instagram.com" class="btnSosmed"><img src="assets/instagram.png" alt="instagram" /></a>
+          </li>
+          <li>
+            <a href="linkdin.com" class="btnSosmed"><img src="assets/linkedin.png" alt="linkdin" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="modal_bg">
+      <div class="modal">
+        <h3>Notifikasi</h3>
+        <form id="modalConfirm">
+          <p>Yakin Akan menghapus buku?</p>
+          <button id="bookSubmit" type="submit">Hapus</button>
+        </form>
+        <span id="modalClose">X</span>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
